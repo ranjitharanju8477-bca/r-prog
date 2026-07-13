@@ -1,0 +1,14 @@
+##function
+```{r}
+add <- function(a,b){
+  return(a+b)
+}
+
+add(10,20)
+```
+
+##visualization
+```{r}
+marks <- c(70,80,90,95)
+barplot(marks)
+```
