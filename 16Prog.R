@@ -23,14 +23,18 @@ total_cost<- c(12.99,8.50,24.75,15.00,9.99) |>
   round(2) |>
   sum()
 
-#Anonymous Functions
-total_cost<- c(12.99,8.50,24.75,15.00,9.99) |>
-  (\(x) x * 0.9)() |>
-  round(2) |>
-  
-#it's Equivalent to:
-  total_cost<- c(12.99,8.50,24.75,15.00,9.99) |>
-  (\(x) x * 0.9)() |>
-  round(2) |> 
-  sum()
-  
+#17.Create a variable temp_celsius with value 25. Convert it to Fahrenheit using the formula: F = (C × 9/5) + 32. Then convert Fahrenheit back to Celsius to verify.
+# Step 1: Create Celsius variable
+temp_celsius <- 25
+
+# Step 2: Convert Celsius to Fahrenheit
+temp_fahrenheit <- (temp_celsius * 9/5) + 32
+
+# Step 3: Convert Fahrenheit back to Celsius
+temp_celsius_back <- (temp_fahrenheit - 32) * 5/9
+
+# Print results
+temp_celsius
+temp_fahrenheit
+temp_celsius_back
+
